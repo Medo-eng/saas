@@ -82,7 +82,8 @@ export default function RemixEngine() {
 
   return (
     <>
-      <section ref={engineRef} id="remix-engine" className="px-6 py-20 max-w-6xl mx-auto">
+      <section ref={engineRef} id="remix-engine" className="section-spacing">
+        <div className="container-custom">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -200,6 +201,7 @@ export default function RemixEngine() {
             </motion.div>
           )}
         </AnimatePresence>
+        </div>
       </section>
 
       {/* Paywall */}

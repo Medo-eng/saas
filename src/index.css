@@ -44,6 +44,23 @@ body {
     var(--color-obsidian);
 }
 
+/* === Layout Utilities === */
+.container-custom {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem; /* px-6 */
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 2rem; /* px-8 */
+    padding-right: 2rem; /* px-8 */
+  }
+}
+
+
 /* === Glassmorphism Utility === */
 .glass {
   background: var(--color-glass-bg);
@@ -56,6 +73,11 @@ body {
 .glass-hover:hover {
   background: var(--color-glass-hover);
   border-color: rgba(255, 255, 255, 0.15);
+}
+
+.section-spacing {
+  padding-top: 5rem; /* py-20 */
+  padding-bottom: 5rem; /* py-20 */
 }
 
 /* === Typography === */

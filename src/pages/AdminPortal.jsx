@@ -150,8 +150,7 @@ export default function AdminPortal() {
 
   // ─── Dashboard ────────────────────────────────────────
   return (
-    <div className="min-h-screen px-6 py-10">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen py-10 container-custom">
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
           <div className="flex items-center gap-3">
@@ -258,7 +257,6 @@ export default function AdminPortal() {
             </motion.div>
           </>
         )}
-      </div>
     </div>
   );
 }

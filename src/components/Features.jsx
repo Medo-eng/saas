@@ -55,7 +55,8 @@ const itemVariants = {
 
 export default function Features() {
   return (
-    <section className="px-6 py-24 max-w-6xl mx-auto">
+    <section className="section-spacing">
+      <div className="container-custom">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -99,6 +100,7 @@ export default function Features() {
           </motion.div>
         ))}
       </motion.div>
+      </div>
     </section>
   );
 }

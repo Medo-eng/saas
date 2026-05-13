@@ -3,7 +3,8 @@ import { ArrowRight, Play, Wand2, TrendingUp } from 'lucide-react';
 
 export default function Hero({ onScrollToEngine }) {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 text-center">
+    <section className="min-h-screen flex flex-col items-center justify-center section-spacing text-center">
+      <div className="container-custom flex flex-col items-center">
       {/* Badge */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -80,6 +81,7 @@ export default function Hero({ onScrollToEngine }) {
         transition={{ delay: 1.1, duration: 0.8 }}
         className="mt-20 w-full max-w-md h-px bg-gradient-to-r from-transparent via-emerald/30 to-transparent"
       />
+      </div>
     </section>
   );
 }
